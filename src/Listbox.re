@@ -74,3 +74,15 @@ module Item = {
     React.element =
     "ListboxItem";
 };
+
+module Group = {
+  [@bs.module "@reach/listbox"] [@react.component]
+  external make:
+    (
+      ~className: option(string)=?,
+      ~children: React.element,
+      ~label: option(string)=?
+    ) =>
+    React.element =
+    "ListboxGroup";
+};
