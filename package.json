@@ -1,5 +1,5 @@
 {
-  "name": "bs-reach",
+  "name": "@seamonster-studios/bs-reach",
   "version": "0.5.3",
   "scripts": {
     "build": "bsb -make-world",
@@ -33,23 +33,23 @@
     "reason-react": "^0.7.0"
   },
   "dependencies": {
-    "@reach/accordion": "^0.9.1",
-    "@reach/alert": "^0.9.1",
-    "@reach/alert-dialog": "^0.9.1",
-    "@reach/auto-id": "^0.9.0",
-    "@reach/checkbox": "^0.9.1",
-    "@reach/combobox": "^0.9.1",
-    "@reach/dialog": "^0.9.1",
-    "@reach/disclosure": "^0.9.1",
-    "@reach/listbox": "^0.9.1",
-    "@reach/menu-button": "^0.9.1",
-    "@reach/portal": "^0.9.0",
-    "@reach/rect": "^0.9.0",
-    "@reach/skip-nav": "^0.9.0",
-    "@reach/slider": "^0.9.1",
-    "@reach/tabs": "^0.9.1",
-    "@reach/tooltip": "^0.9.1",
-    "@reach/visually-hidden": "^0.9.0",
-    "@reach/window-size": "^0.9.0"
+    "@reach/accordion": "^0.11.2",
+    "@reach/alert": "^0.11.2",
+    "@reach/alert-dialog": "^0.11.2",
+    "@reach/auto-id": "^0.11.2",
+    "@reach/checkbox": "^0.11.2",
+    "@reach/combobox": "^0.11.2",
+    "@reach/dialog": "^0.11.2",
+    "@reach/disclosure": "^0.11.2",
+    "@reach/listbox": "^0.11.2",
+    "@reach/menu-button": "^0.11.2",
+    "@reach/portal": "^0.11.2",
+    "@reach/rect": "^0.11.2",
+    "@reach/skip-nav": "^0.11.2",
+    "@reach/slider": "^0.11.2",
+    "@reach/tabs": "^0.11.2",
+    "@reach/tooltip": "^0.11.2",
+    "@reach/visually-hidden": "^0.11.1",
+    "@reach/window-size": "^0.11.2"
   }
 }
