@@ -1,18 +1,21 @@
-
 module Item = {
   [@bs.module "@reach/accordion"] [@react.component]
-  external make: (~children: React.element) => React.element = "AccordionItem";
+  external make:
+    (~children: React.element, ~className: option(string)=?) => React.element =
+    "AccordionItem";
 };
 
 module Button = {
   [@bs.module "@reach/accordion"] [@react.component]
-  external make: (~children: React.element) => React.element =
+  external make:
+    (~children: React.element, ~className: option(string)=?) => React.element =
     "AccordionButton";
 };
 
 module Panel = {
   [@bs.module "@reach/accordion"] [@react.component]
-  external make: (~children: React.element) => React.element =
+  external make:
+    (~children: React.element, ~className: option(string)=?) => React.element =
     "AccordionPanel";
 };
 
@@ -25,6 +28,7 @@ external make:
     ~index: option(int)=?,
     ~defaultIndex: option(int)=?,
     ~onChange: option(int => unit)=?,
+    ~className: option(string)=?,
     ~children: React.element
   ) =>
   React.element =
