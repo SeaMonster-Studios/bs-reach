@@ -33,3 +33,9 @@ external make:
   ) =>
   React.element =
   "Accordion";
+
+type accordionItemContext = {isExpanded: bool};
+
+[@bs.module "@reach/accordion"]
+external useAccordionItemContext: unit => accordionItemContext =
+  "useAccordionItemContext";
