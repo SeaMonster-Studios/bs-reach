@@ -1,7 +1,7 @@
 [@bs.module "./compat/listbox"] [@react.component]
 external make:
   (
-    ~arrow: option(bool)=?,
+    ~arrow: option(React.element)=?,
     ~button: option(React.element)=?,
     ~children: React.element,
     ~className: option(string)=?,
