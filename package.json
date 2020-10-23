@@ -1,6 +1,6 @@
 {
-  "name": "bs-reach",
-  "version": "0.5.4",
+  "name": "@seamonster-studios/bs-reach",
+  "version": "0.6.0",
   "scripts": {
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
@@ -13,6 +13,10 @@
     "src",
     "bsconfig.json"
   ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "https://github.com/eldh/bs-reach",
   "keywords": [
     "BuckleScript",
