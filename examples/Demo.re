@@ -24,6 +24,7 @@ module Index = {
          "disclosure",
          "listbox",
          "menu-button",
+         "menu-button-with-popover",
          "rect",
          "skipnav",
          "slider",
@@ -53,6 +54,7 @@ let make = () => {
   | ["dialog"] => <DialogDemo />
   | ["disclosure"] => <DisclosureDemo />
   | ["menu-button"] => <MenuButtonDemo />
+  | ["menu-button-with-popover"] => <MenuButtonWithPopoverDemo />
   | ["listbox"] => <ListboxDemo />
   | ["rect"] => <RectDemo />
   | ["skipnav"] => <SkipNavDemo />

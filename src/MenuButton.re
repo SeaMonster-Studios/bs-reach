@@ -36,6 +36,18 @@ module List = {
     "MenuList";
 };
 
+module Items = {
+  [@bs.module "@reach/menu-button/dist"] [@react.component]
+  external make:
+    (
+      ~className: string=?,
+      ~style: ReactDOMRe.Style.t=?,
+      ~children: React.element
+    ) =>
+    React.element =
+    "MenuItems";
+};
+
 module Item = {
   [@bs.module "@reach/menu-button/dist"] [@react.component]
   external make:
@@ -47,6 +59,26 @@ module Item = {
     ) =>
     React.element =
     "MenuItem";
+};
+
+module Popover = {
+  type domRect;
+
+  [@bs.module "@reach/menu-button/dist"] [@react.component]
+  external make:
+    (
+      ~className: string=?,
+      ~style: ReactDOMRe.Style.t=?,
+      ~children: React.element,
+      ~portal: option(bool)=?,
+      ~position: option(
+                   (Js.Nullable.t(domRect), Js.Nullable.t(domRect)) =>
+                   ReactDOMRe.style,
+                 )
+                   =?
+    ) =>
+    React.element =
+    "MenuPopover";
 };
 
 module ExternalLink = {
